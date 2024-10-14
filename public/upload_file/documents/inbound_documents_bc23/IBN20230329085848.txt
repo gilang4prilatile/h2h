@@ -1,0 +1,77 @@
+Status = "PCO";
+JumlahHariCuti = 0.5;
+KeteranganStatus = "Tidak ada Jam Masuk.";
+Izin = 0;
+IDIzin = 0;
+Cuti = 0;
+IDCuti = 0;
+BayarHutangCuti = 0;
+IDBayarHutangCuti = 0;
+PembayaranHutangCuti = 0;
+IDPembayaranHutangCuti = 0;
+Outing = 0;
+IDOuting = 0;
+
+direplace menjadi
+
+if(JadwalTanggalWaktuCheckOut.Hour>0&&JadwalTanggalWaktuCheckOut.Hour<6){
+    if(TanggalWaktuCheckOut<=JadwalTanggalWaktuCheckOut.AddHours(3)){
+        Status = "PCO";
+        JumlahHariCuti = 0.5;
+        KeteranganStatus = "Tidak ada Jam Masuk.";
+        Izin = 0;
+        IDIzin = 0;
+        Cuti = 0;
+        IDCuti = 0;
+        BayarHutangCuti = 0;
+        IDBayarHutangCuti = 0;
+        PembayaranHutangCuti = 0;
+        IDPembayaranHutangCuti = 0;
+        Outing = 0;
+        IDOuting = 0;
+    }else{
+        Status = "MKR";
+        JumlahHariCuti = 1;
+        KeteranganStatus = "Tidak ada Jam Masuk dan Tidak Ada Jam Pulang!";
+        Izin = 0;
+        IDIzin = 0;
+        Cuti = 0;
+        IDCuti = 0;
+        BayarHutangCuti = 0;
+        IDBayarHutangCuti = 0;
+        PembayaranHutangCuti = 0;
+        IDPembayaranHutangCuti = 0;
+        Outing = 0;
+        IDOuting = 0;
+    }
+}else{
+    if(TanggalWaktuCheckOut<=JadwalTanggalWaktuCheckOut.AddHours(8)){
+        Status = "PCO";
+        JumlahHariCuti = 0.5;
+        KeteranganStatus = "Tidak ada Jam Masuk.";
+        Izin = 0;
+        IDIzin = 0;
+        Cuti = 0;
+        IDCuti = 0;
+        BayarHutangCuti = 0;
+        IDBayarHutangCuti = 0;
+        PembayaranHutangCuti = 0;
+        IDPembayaranHutangCuti = 0;
+        Outing = 0;
+        IDOuting = 0;
+    }else{
+        Status = "MKR";
+        JumlahHariCuti = 1;
+        KeteranganStatus = "Tidak ada Jam Masuk dan Tidak Ada Jam Pulang!";
+        Izin = 0;
+        IDIzin = 0;
+        Cuti = 0;
+        IDCuti = 0;
+        BayarHutangCuti = 0;
+        IDBayarHutangCuti = 0;
+        PembayaranHutangCuti = 0;
+        IDPembayaranHutangCuti = 0;
+        Outing = 0;
+        IDOuting = 0;
+    }
+}
